@@ -1,0 +1,7 @@
+.dir__controls{display:grid;gap:1rem;margin:1rem 0}
+.input{padding:.7rem .8rem;border-radius:10px;border:1px solid var(--border);background:#0c1015;color:var(--text)}
+.dir__filters select{width:100%}
+#directoryGrid{margin-top:1rem}
+.card.alumni{display:flex;flex-direction:column;gap:.4rem}
+.card.alumni .alumni__meta{color:var(--muted);font-size:.95rem}
+.card.alumni .alumni__actions{display:flex;gap:.5rem;margin-top:.4rem}

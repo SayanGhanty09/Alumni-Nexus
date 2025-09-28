@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Mentorship • Alumni Nexus</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="./css/style.css" />
+	<link rel="stylesheet" href="./css/navbar.css" />
+	<link rel="stylesheet" href="./css/mentorship.css" />
+</head>
+<body>
+	<header id="app-navbar" data-include="navbar.html"></header>
+	<main class="container section">
+		<h1>Mentorship</h1>
+		<div class="card">
+			<h3>Mentor Match (Mock AI)</h3>
+			<form id="matchForm" class="grid grid-3">
+				<input class="input" id="interest" placeholder="Your interests (e.g., frontend, ML)" />
+				<input class="input" id="goal" placeholder="Your goal (e.g., job prep)" />
+				<button class="btn btn--primary" type="submit">Find Matches</button>
+			</form>
+		</div>
+		<div class="mentors__controls card">
+			<input id="skillSearch" class="input" placeholder="Search mentors by skill..." />
+		</div>
+		<div id="mentorsGrid" class="grid grid-3"></div>
+	</main>
+	<div id="requestModal" class="modal hide">
+		<div class="modal__content card">
+			<h3>Request Sent</h3>
+			<p class="muted">Your mentor request has been sent (demo).</p>
+			<button id="closeModal" class="btn btn--primary">Close</button>
+		</div>
+	</div>
+	<footer id="app-footer" data-include="footer.html"></footer>
+	<button id="scrollTop" aria-label="Scroll to top">↑</button>
+	<script src="./js/main.js"></script>
+	<script src="./js/mentorship.js"></script>
+</body>
+</html>

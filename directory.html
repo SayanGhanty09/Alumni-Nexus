@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Directory • Alumni Nexus</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="./css/style.css" />
+	<link rel="stylesheet" href="./css/navbar.css" />
+	<link rel="stylesheet" href="./css/directory.css" />
+</head>
+<body>
+	<header id="app-navbar" data-include="navbar.html"></header>
+	<main class="container section">
+		<h1>Alumni Directory</h1>
+		<div class="dir__controls card">
+			<input id="searchInput" class="input" type="text" placeholder="Search by name, title, company..." />
+			<div class="grid grid-3 dir__filters">
+				<select id="filterDept" class="input">
+					<option value="">All Departments</option>
+					<option>Computer Science</option>
+					<option>Electrical</option>
+					<option>Mechanical</option>
+					<option>Civil</option>
+				</select>
+				<select id="filterYear" class="input">
+					<option value="">All Years</option>
+					<option>2024</option>
+					<option>2023</option>
+					<option>2022</option>
+					<option>2021</option>
+					<option>2020</option>
+				</select>
+				<select id="filterRole" class="input">
+					<option value="">All Roles</option>
+					<option>Engineer</option>
+					<option>Manager</option>
+					<option>Founder</option>
+				</select>
+			</div>
+		</div>
+		<div id="directoryGrid" class="grid grid-3 reveal"></div>
+	</main>
+	<footer id="app-footer" data-include="footer.html"></footer>
+	<button id="scrollTop" aria-label="Scroll to top">↑</button>
+	<script src="./js/main.js"></script>
+	<script src="./js/directory.js"></script>
+</body>
+</html>

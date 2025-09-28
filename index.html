@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta name="description" content="Alumni Nexus – A modern alumni management and engagement platform." />
+	<meta name="keywords" content="alumni, directory, events, mentorship, fundraising, dashboard" />
+	<title>Alumni Nexus</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="./css/style.css" />
+	<link rel="stylesheet" href="./css/navbar.css" />
+</head>
+<body>
+	<header id="app-navbar" data-include="navbar.html"></header>
+
+	<main>
+		<section class="hero" id="home">
+			<div class="container hero__grid">
+				<div class="hero__content">
+					<h1 class="reveal">Reconnect. Engage. Grow.</h1>
+					<p class="muted reveal">Alumni Nexus brings alumni, students, and institutions together with directories, events, mentorship, fundraising and more.</p>
+					<div class="hero__actions reveal">
+						<a href="login.html" class="btn btn--primary">Get Started</a>
+						<a href="#features" class="btn btn--ghost">Explore Features</a>
+					</div>
+				</div>
+				<div class="hero__visual reveal">
+					<div class="hero__card">Alumni Nexus</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="features" class="section">
+			<div class="container">
+				<h2 class="section__title reveal">Platform Features</h2>
+				<div class="grid grid-3 features__grid">
+					<article class="card reveal">
+						<h3>Directory</h3>
+						<p class="muted">Search alumni by department, year, or role and connect easily.</p>
+						<a href="directory.html" class="link">Browse Directory →</a>
+					</article>
+					<article class="card reveal">
+						<h3>Events</h3>
+						<p class="muted">Discover reunions, webinars, and meetups. Register in one click.</p>
+						<a href="events.html" class="link">View Events →</a>
+					</article>
+					<article class="card reveal">
+						<h3>Mentorship</h3>
+						<p class="muted">Find mentors by skills and interests. Get matched instantly.</p>
+						<a href="mentorship.html" class="link">Find a Mentor →</a>
+					</article>
+					<article class="card reveal">
+						<h3>Fundraising</h3>
+						<p class="muted">Support campaigns and track progress in real-time.</p>
+						<a href="fundraising.html" class="link">Support Causes →</a>
+					</article>
+					<article class="card reveal">
+						<h3>Community Chat</h3>
+						<p class="muted">Join discussions and stay updated with your network.</p>
+						<a href="chat.html" class="link">Open Chat →</a>
+					</article>
+					<article class="card reveal">
+						<h3>Admin Dashboard</h3>
+						<p class="muted">Visualize stats with charts and export reports.</p>
+						<a href="admin.html" class="link">Go to Admin →</a>
+					</article>
+				</div>
+			</div>
+		</section>
+
+		<section id="cta" class="section section--accent">
+			<div class="container cta__wrap">
+				<h2 class="reveal">Ready to build your alumni community?</h2>
+				<a href="login.html" class="btn btn--primary">Create Account</a>
+			</div>
+		</section>
+	</main>
+
+	<footer id="app-footer" data-include="footer.html"></footer>
+
+	<button id="scrollTop" aria-label="Scroll to top">↑</button>
+	<div id="chatbot" class="chatbot">
+		<button id="chatbotToggle" class="chatbot__toggle" aria-label="Open chatbot">💬</button>
+		<div id="chatbotWindow" class="chatbot__window" hidden>
+			<div class="chatbot__header">
+				<span>AI Assistant (Mock)</span>
+				<button id="chatbotClose" aria-label="Close">✕</button>
+			</div>
+			<ul id="chatbotMessages" class="chatbot__messages"></ul>
+			<form id="chatbotForm" class="chatbot__form">
+				<input id="chatbotInput" type="text" placeholder="Ask about Alumni Nexus..." aria-label="Chat input" />
+				<button type="submit" class="btn btn--primary">Send</button>
+			</form>
+		</div>
+	</div>
+
+	<script src="./js/main.js"></script>
+	<script src="./js/navbar.js"></script>
+</body>
+</html>

@@ -1,0 +1,85 @@
+:root{
+	--bg:#0b0d10;
+	--panel:#111418;
+	--text:#e6e8eb;
+	--muted:#9aa4ad;
+	--primary:#6ee7b7;
+	--primary-600:#34d399;
+	--accent:#1f2937;
+	--border:#22262b;
+	--danger:#ef4444;
+	--warning:#f59e0b;
+	--success:#22c55e;
+	--radius:12px;
+	--shadow:0 10px 30px rgba(0,0,0,.35);
+}
+
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+	margin:0;
+	font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+	background:var(--bg);
+	color:var(--text);
+	line-height:1.6;
+}
+img{max-width:100%;display:block}
+.container{width:min(1100px,92%);margin:0 auto}
+.muted{color:var(--muted)}
+.link{color:var(--primary)}
+.btn{display:inline-flex;align-items:center;gap:.5rem;padding:.8rem 1rem;border-radius:10px;border:1px solid var(--border);background:transparent;color:var(--text);text-decoration:none;transition:.2s all}
+.btn:hover{transform:translateY(-1px);}
+.btn--primary{background:var(--primary);color:#0b0d10;border-color:transparent}
+.btn--primary:hover{background:var(--primary-600)}
+.btn--ghost{background:transparent}
+.card{background:var(--panel);border:1px solid var(--border);border-radius:var(--radius);padding:1.2rem;box-shadow:var(--shadow)}
+.grid{display:grid;gap:1rem}
+.grid-2{grid-template-columns:repeat(2,1fr)}
+.grid-3{grid-template-columns:repeat(3,1fr)}
+.section{padding:4rem 0}
+.section--accent{background:linear-gradient(180deg,transparent,rgba(255,255,255,.04))}
+.section__title{margin:0 0 1.2rem}
+
+/* Hero */
+.hero{padding:6rem 0 4rem;background:radial-gradient(1200px 500px at 10% -10%, rgba(110,231,183,.2), transparent 60%) , radial-gradient(1000px 400px at 90% -20%, rgba(110,231,183,.15), transparent 50%)}
+.hero__grid{display:grid;grid-template-columns:1.2fr .8fr;gap:2rem;align-items:center}
+.hero__card{height:260px;border-radius:18px;background:linear-gradient(135deg,#0f172a,#111827);border:1px solid var(--border);display:grid;place-items:center;color:var(--muted);font-weight:600}
+.hero__actions{display:flex;gap:.8rem;margin-top:1rem}
+
+/* Footer */
+.site-footer{margin-top:3rem;border-top:1px solid var(--border);background:var(--panel)}
+.footer__grid{display:grid;grid-template-columns:2fr 1fr 1fr;gap:1rem;padding:2rem 0}
+.footer__grid ul{list-style:none;padding:0;margin:0}
+.footer__grid a{color:var(--muted);text-decoration:none}
+.footer__grid a:hover{color:var(--text)}
+.footer__copy{padding:1rem 0;border-top:1px solid var(--border);}
+
+/* Utilities */
+.hide{display:none}
+.reveal{opacity:0;transform:translateY(10px);transition:opacity .6s ease, transform .6s ease}
+.reveal.visible{opacity:1;transform:none}
+
+/* Scroll to top */
+#scrollTop{position:fixed;right:1rem;bottom:1rem;padding:.6rem .8rem;border-radius:10px;border:1px solid var(--border);background:var(--panel);color:var(--text);cursor:pointer;box-shadow:var(--shadow);display:none}
+#scrollTop.show{display:block}
+
+/* Chatbot */
+.chatbot{position:fixed;right:1rem;bottom:1rem;z-index:50}
+.chatbot__toggle{padding:.7rem .9rem;border-radius:50%;border:1px solid var(--border);background:var(--panel);color:var(--text);box-shadow:var(--shadow);cursor:pointer}
+.chatbot__window{position:fixed;right:1rem;bottom:4.2rem;width:320px;max-height:60vh;background:var(--panel);border:1px solid var(--border);border-radius:14px;display:flex;flex-direction:column;box-shadow:var(--shadow)}
+.chatbot__header{display:flex;align-items:center;justify-content:space-between;padding:.7rem 1rem;border-bottom:1px solid var(--border)}
+.chatbot__messages{list-style:none;margin:0;padding:1rem;display:flex;flex-direction:column;gap:.5rem;overflow:auto}
+.chatbot__messages li{background:#0e1116;border:1px solid var(--border);padding:.6rem .75rem;border-radius:12px}
+.chatbot__form{display:flex;gap:.5rem;padding:.7rem;border-top:1px solid var(--border)}
+.chatbot__form input{flex:1;border-radius:10px;border:1px solid var(--border);background:#0c1015;color:var(--text);padding:.6rem .7rem}
+
+/* Responsive */
+@media (max-width: 960px){
+	.grid-3{grid-template-columns:1fr 1fr}
+	.hero__grid{grid-template-columns:1fr}
+	.footer__grid{grid-template-columns:1fr 1fr}
+}
+@media (max-width: 600px){
+	.grid-3,.grid-2{grid-template-columns:1fr}
+	.footer__grid{grid-template-columns:1fr}
+}

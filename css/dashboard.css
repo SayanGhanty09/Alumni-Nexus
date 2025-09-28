@@ -1,0 +1,4 @@
+.stat{display:flex;flex-direction:column;gap:.4rem}
+.stat .num{font-size:1.8rem;font-weight:700}
+.linkcard{text-decoration:none;color:inherit}
+.linkcard:hover{outline:1px solid var(--border)}

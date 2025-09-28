@@ -1,0 +1,7 @@
+.mentors__controls{margin:1rem 0}
+.input{padding:.7rem .8rem;border-radius:10px;border:1px solid var(--border);background:#0c1015;color:var(--text)}
+.card.mentor{display:flex;flex-direction:column;gap:.4rem}
+.card.mentor .meta{color:var(--muted)}
+.modal{position:fixed;inset:0;background:rgba(0,0,0,.5);display:flex;align-items:center;justify-content:center}
+.modal.hide{display:none}
+.modal__content{max-width:420px}

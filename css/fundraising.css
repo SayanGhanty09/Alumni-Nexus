@@ -1,0 +1,3 @@
+.card.campaign{display:flex;flex-direction:column;gap:.5rem}
+.progress{height:10px;border-radius:999px;background:#0e1116;border:1px solid var(--border);overflow:hidden}
+.progress__bar{height:100%;background:linear-gradient(90deg,var(--primary),#34d399)}
